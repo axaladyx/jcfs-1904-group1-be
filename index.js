@@ -6,6 +6,7 @@ const port = process.env.API_PORT;
 
 const userRouter = require("./src/routers/users");
 const productsRouter = require("./src/routers/products");
+const cartRouter = require("./src/routers/carts");
 
 app.use(cors("*"));
 app.use(express.json());
@@ -13,6 +14,7 @@ app.use(express.static("public"));
 
 app.use("/users", userRouter);
 app.use("/products", productsRouter);
+app.use("/carts", cartRouter);
 
 app.get("/", (req, res) => {
   res.status(200).send("API 1-Pharmacy");
