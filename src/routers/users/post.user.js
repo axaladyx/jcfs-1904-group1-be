@@ -67,7 +67,7 @@ const postLoginUser = async (req, res, next) => {
     const compareResult = bcrypt.compareSync(password, user[0].password);
 
     if (!compareResult) {
-      return res.status(401).send({ message: "Incorrect password" });
+      return res.status(401).send({ message: "Log in cridentials invalid" });
     }
 
     res.status(200).send({ user });

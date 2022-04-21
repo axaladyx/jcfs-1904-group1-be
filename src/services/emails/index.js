@@ -28,6 +28,7 @@ const sendVerificationEmail = async ({ recipient, subject, username, url }) => {
   }
 };
 
+<<<<<<< HEAD
 const sendResetPasswordEmail = async ({ recipient, subject, url }) => {
   try {
     const mail = {
@@ -44,3 +45,6 @@ const sendResetPasswordEmail = async ({ recipient, subject, url }) => {
 };
 
 module.exports = { sendVerificationEmail, sendResetPasswordEmail };
+=======
+module.exports = { sendVerificationEmail };
+>>>>>>> 2cc3f571b4b62c8eaf94e01c040152a2771fbf45

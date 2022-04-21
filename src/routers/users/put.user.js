@@ -39,7 +39,7 @@ const putResetPassword = async (req, res, next) => {
   } catch (error) {}
 };
 
-router.put("/:id", putUserRouter);
+router.put("/:userId", putUserRouter);
 router.put("/reset-password", putResetPassword);
 
 module.exports = router;
